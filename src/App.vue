@@ -97,7 +97,6 @@
         if(word == this.arr){
           this.words.push({num: this.num++, name: this.arr, minutes: Math.floor(((new Date() - this.start)/1000/60%60)), seconds: Math.floor(((new Date() - this.start)/1000%60)), miliseconds: new Date() - this.start});
           this.success = true;
-          console.log("success");
         }
       },
       get_word(){
