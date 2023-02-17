@@ -1,10 +1,6 @@
 const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: [
-  ],
-
-  runtimeCompiler: true,
-
-  pluginOptions: {
-  }
-})
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/TestTask/'
+    : '/'
+}
